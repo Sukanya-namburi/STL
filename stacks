@@ -1,0 +1,24 @@
+                                                                //stacks
+//stack--->lifo ds
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    stack<int>st;//decalaration of stack
+    st.push(3);
+    st.push(5);
+    st.push(72);
+    st.emplace(67);
+    //to print all elements in stack
+    while(!st.empty()){
+        cout<<st.top()<<" ";
+        st.pop();
+    }
+    //to clear the stack
+    while(!st.empty()){
+        st.pop();
+    }
+    //checks whether the stack is empty or not
+    if(st.empty()){
+        cout<<"stack is empty!!";
+    }
+}
