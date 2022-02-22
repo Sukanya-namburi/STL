@@ -1,0 +1,82 @@
+                                                                                //QUEUES
+//queue--->fifo ds
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    queue<int>q;
+    q.push(4);
+    q.push(87);
+    q.push(9);
+    q.emplace(7);
+    cout<<q.size()<<endl;
+    //to print elements in the queue
+    while(!q.empty()){
+        cout<<q.front()<<" ";
+        q.pop();
+    }
+    cout<<endl;
+    //to clear the queue
+    while(!q.empty()){
+        q.pop();
+    }
+    
+}
+
+
+//priority_queue----->prints the elements in decending order
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    priority_queue<int>q;
+    q.push(4);
+    q.push(87);
+    q.push(9);
+    q.emplace(7);
+    cout<<q.size()<<endl;
+    //to print elements in the queue
+    while(!q.empty()){
+        cout<<q.top()<<" ";//front is used in queue where as top is used in priority queue
+        q.pop();
+    }
+    cout<<endl;
+    //to clear the queue
+    while(!q.empty()){
+        q.pop();
+    }
+    //checks whether the queue is empty or not
+    if(q.empty()){
+        cout<<"yes";
+    }
+    
+}
+
+
+//minimum priority_queue----->prints the elements in ascending order
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    priority_queue<int,vector<int>,greater<int>>q;//declaration of minimum priority queue
+    q.push(4);
+    q.push(87);
+    q.push(9);
+    q.emplace(7);
+    cout<<q.size()<<endl;
+    //to print elements in the queue
+    while(!q.empty()){
+        cout<<q.top()<<" ";//front is used in queue where as top is used in priority queue
+        q.pop();
+    }
+    cout<<endl;
+    //to clear the queue
+    while(!q.empty()){
+        q.pop();
+    }
+    //checks whether the queue is empty or not
+    if(q.empty()){
+        cout<<"yes";
+    }
+    
+}
+
+//dequeue---->same as vectors
+dequeue<int>dq;//declaration of dequeue
